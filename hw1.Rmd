@@ -1,0 +1,19 @@
+---
+title: "hw1"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Paragraph
+I think data science is the way to visualize the data in a _**human readable way**_. In order to visualize the data, people usually use the plots or graphs for comparison and numerical ranking. Moreover, people will analysis thoese data find the result( such as some social survy about what people thouth,ect).
+
+image:![](C:\Users\h8438\Desktop\finalprojectscreenshoot1.png)
+
+
+
+```{r version}
+version
+```
