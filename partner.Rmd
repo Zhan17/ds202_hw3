@@ -1,0 +1,27 @@
+---
+title: "partner"
+author: "Zihao Han"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 1. Name & Username
+###name:Xi Wang
+###username: wolfgangwx
+
+
+## 2.Recent commit
+### "partner's homework checkng"
+####e9abf84c97875785ee4032b932adeacb07ba6e42
+
+## 3.Error
+#### Error in library(png) : there is no package called 'png'
+####Calls: <Anonymous> ... withCallingHandlers -> withVisible -> eval -> eval -> library
+####Execution halted
+###can't find the 'png' picture file in my partner's Rmd. I believe he refer his picture in the path of his laptop. If he refer in a web link it won't enconter this error
+
+## 4.tip
+### Use 'git ls' to help me check the file and folder easily when up load a file to git then copy and paste.
