@@ -1,0 +1,87 @@
+---
+title: "hw2"
+author: "Zihao Han"
+date: "February 5, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+#R commands
+## 1
+```{r}
+f <- c(-10,15)
+(f-32)/1.8
+
+cel <- (f-32)/1.8
+cel
+
+```
+## 2
+```{r}
+
+
+rep(x=0:1,times=100)
+
+vec200<- rep(x=0:1,times=100)
+
+vec200
+```
+## 3
+```{r}
+
+round(sqrt(1:1001))
+rd <- round(sqrt(1:1001))
+duplicated(rd)
+rdd<-duplicated(rd)
+table(rdd)#FALSE is the number of Prefect squares we have n [1:1001]
+a<- table(rdd)
+a[['FALSE']]
+numPerfect<- a[['FALSE']]
+numPerfect
+```
+
+#Cars and mileage
+##1
+```{R}
+library(ggplot2)
+summary(mpg)
+dat<- mpg
+View(dat)
+sort(dat$hwy)
+head(sort(dat$hwy),3)
+top3 <-head(sort(dat$hwy),3)
+top3
+```
+##2
+```{r}
+dat[dat$class=='compact',]
+modelscompact<-dat[dat$class=='compact',]
+models<-modelscompact$model
+duplicated(models)
+dm<-duplicated(models)
+table(dm)
+aa<- table(dm)
+aa[["FALSE"]]
+numCompact <- aa[["FALSE"]]
+numCompact
+```
+##3 
+```{r}
+plot(log(dat$hwy),log(dat$cty))
+```
+###Relation:  cty increased as hwy increases
+###Ther are different types of cars that have same values, so the point are stacked on each other.
+
+##4
+```{r}
+dathwy <- dat$hwy
+dathwy[dat$year==1999]
+dathwy[dat$year==2008]
+boxplot(log(dathwy[dat$year==1999]),log(dathwy[dat$year==2008]),names=c("1999","2008"))
+summary()
+
+
+
+```
