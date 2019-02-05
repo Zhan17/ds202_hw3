@@ -1,6 +1,6 @@
 ---
 title: "hw2"
-author: "Zihao Han"
+author: "Zihao Han;Zhan17"
 date: "February 5, 2019"
 output: html_document
 ---
@@ -80,8 +80,9 @@ dathwy <- dat$hwy
 dathwy[dat$year==1999]
 dathwy[dat$year==2008]
 boxplot(log(dathwy[dat$year==1999]),log(dathwy[dat$year==2008]),names=c("1999","2008"))
-summary()
-
-
+summary(dathwy[dat$year==1999])
+summary(dathwy[dat$year==2008])
 
 ```
+
+
