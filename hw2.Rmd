@@ -79,7 +79,7 @@ plot(log(dat$hwy),log(dat$cty))
 dathwy <- dat$hwy
 dathwy[dat$year==1999]
 dathwy[dat$year==2008]
-boxplot(log(dathwy[dat$year==1999]),log(dathwy[dat$year==2008]),names=c("1999","2008"))
+boxplot(dathwy[dat$year==1999],dathwy[dat$year==2008],names=c("1999","2008"))
 summary(dathwy[dat$year==1999])
 summary(dathwy[dat$year==2008])
 
