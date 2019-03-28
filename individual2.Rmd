@@ -1,0 +1,24 @@
+---
+title: "individual2"
+author: "Zihao Han"
+date: "February 19, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+data(happy, package="productplots")
+head(happy)
+HAPPY <- readRDS("HAPPY.rds")
+head(HAPPY)
+View(HAPPY)
+```
+```{r}
+summary(HAPPY)
+library(ggplot2)
+ggplot(HAPPY,aes(x=HAPPY,fill=HAPPY,##color=HEALTH
+                 ,colour=cyl))+geom_bar(fill="gray",width=1)+facet_wrap(~SEX,ncol=10,scales = "free_y")+xlab("Happiness")
+```
